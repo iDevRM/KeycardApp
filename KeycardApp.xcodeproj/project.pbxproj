@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D37E87D25D467AB003FE0A6 /* ContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D37E87C25D467AB003FE0A6 /* ContentView2.swift */; };
 		1D86E65B25D328FE000A2EAE /* KeycardAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D86E65A25D328FE000A2EAE /* KeycardAppApp.swift */; };
 		1D86E65D25D328FE000A2EAE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D86E65C25D328FE000A2EAE /* ContentView.swift */; };
 		1D86E65F25D328FF000A2EAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D86E65E25D328FF000A2EAE /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D37E87C25D467AB003FE0A6 /* ContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView2.swift; sourceTree = "<group>"; };
 		1D86E65725D328FE000A2EAE /* KeycardApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeycardApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D86E65A25D328FE000A2EAE /* KeycardAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeycardAppApp.swift; sourceTree = "<group>"; };
 		1D86E65C25D328FE000A2EAE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 			children = (
 				1D86E65A25D328FE000A2EAE /* KeycardAppApp.swift */,
 				1D86E65C25D328FE000A2EAE /* ContentView.swift */,
+				1D37E87C25D467AB003FE0A6 /* ContentView2.swift */,
 				1D86E65E25D328FF000A2EAE /* Assets.xcassets */,
 				1D86E66325D328FF000A2EAE /* Info.plist */,
 				1D86E66025D328FF000A2EAE /* Preview Content */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D37E87D25D467AB003FE0A6 /* ContentView2.swift in Sources */,
 				1D86E65D25D328FE000A2EAE /* ContentView.swift in Sources */,
 				1D86E65B25D328FE000A2EAE /* KeycardAppApp.swift in Sources */,
 			);

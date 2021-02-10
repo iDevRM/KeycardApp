@@ -9,42 +9,46 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            ZStack {
-                Color(#colorLiteral(red: 1, green: 0.06493138522, blue: 0, alpha: 0.7385386284))
-                    .frame(width: 430, height: 500)
-                    .position(x: 215, y: 200)
-                    .edgesIgnoringSafeArea(.top)
-                Image("swiftuipic")
-                    .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-                    .padding([.top, .leading, .trailing])
-                    .position(x: 215, y: 180)
-            }
-            VStack {
-                HStack {
-                    Text("Nathan")
-                        .fontWeight(.medium)
-                        .position(x: 176, y: 0)
-                        .font(.title)
-                    Text("Boyd")
-                        .fontWeight(.thin)
-                        .position(x: 39, y: 0)
-                        .font(.title)
-                }
-                Text("Lead UI Designer").position(x: 215, y: -175)
-                HStack {
+        ZStack {
+            Color.gray
+                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            Color(red: 0.91, green: 0.30, blue: 0.24)
+                .cornerRadius(25)
+                .padding(.all)
+                .overlay(Color(.white)
+                            .cornerRadius(25)
+                            .padding(.all)
+                            .frame(height: 400)
+                            .position(CGPoint(x: 214, y: 645))
+                            .overlay(HStack {
+                                Text("Nathan")
+                                    .font(.title)
+                                
+                                Text("Boyd")
+                                    .font(.title)
+                                    .fontWeight(.thin)
+                            }
+                            .position(x: 214, y: 480)))
+                .overlay(HStack {
                     Text("Your")
-                        .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                       
+                        .fontWeight(.bold)
+                    
                     Text("Company")
                         .fontWeight(.bold)
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 0.06493138522, blue: 0, alpha: 0.74)))
+                        .foregroundColor(Color(red: 0.91, green: 0.30, blue: 0.24))
                 }
-            }
+                .position(x: 214, y: 800))
+                .overlay(Text("Lead UI Designer")
+                            .position(CGPoint(x: 214, y: 510)))
+                
+                .overlay(Image("swiftuipic")
+                            .overlay(Circle().stroke(Color.white, lineWidth: 10))
+                            .fixedSize(horizontal: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
+                            .aspectRatio(contentMode: .fit)
+                            .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                            .position(CGPoint(x: 214, y: 235)))
         }
-        Text("")
     }
-    
 }
 
 struct ContentView_Previews: PreviewProvider {
