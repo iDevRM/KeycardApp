@@ -40,11 +40,11 @@ struct ContentView: View {
                         .fontWeight(.bold)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 0.06493138522, blue: 0, alpha: 0.74)))
                 }
-                
-                
             }
         }
+        Text("")
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
