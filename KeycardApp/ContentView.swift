@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+// I could use as much feedback as possible, this was so irritating lol. I know this isnt the best way to get it done.
 struct ContentView: View {
     var body: some View {
         ZStack {

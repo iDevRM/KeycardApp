@@ -12,7 +12,7 @@ struct ContentView2: View {
     let phone: String
     let mail: String
     let blood: String
-    
+    // I could use as much feedback as possible, this was so irritating lol. I know this isnt the best way to get it done.
     var body: some View {
         Color.white
             .overlay(Image("barcode")
